@@ -1,0 +1,31 @@
+256m - java.lang.OutOfMemoryError: Java heap space
+384m - spend msec:5986, sec:5
+512m - spend msec:5780, sec:5
+640m - spend msec:4979, sec:4
+768m - spend msec:5168, sec:5
+896m - spend msec:4782, sec:4
+1024m - spend msec:4543, sec:4
+1152m - spend msec:4403, sec:4
+1280Mb - spend msec:4143, sec:4
+1408Mb - spend msec:4186, sec:4
+1536Mb - spend msec:4239, sec:4
+1664Mb - spend msec:4005, sec:4
+1792Mb - spend msec:3981, sec:3
+1902Mb - spend msec:4323, sec:4
+2048Mb - spend msec:4197, sec:4
+2176Mb - spend msec:4151, sec:4
+
+Самый оптимальный размер памяти 640m
+
+После оптимизации
+
+2m - java.lang.OutOfMemoryError: Java heap space
+4m - spend msec:636, sec:0
+8m - spend msec:608, sec:0
+16m - spend msec:613, sec:0
+32m - spend msec:605, sec:0
+64m - spend msec:658, sec:0
+128m - spend msec:622, sec:0
+256m - spend msec:597, sec:0
+
+Самый оптимальный размер памяти после оптимизации 4m
