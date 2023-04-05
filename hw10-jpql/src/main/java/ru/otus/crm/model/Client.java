@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+//import javax.persistence.Entity;
 import java.util.List;
 
 @Getter
@@ -26,7 +27,8 @@ public class Client implements Cloneable {
     @OneToOne(cascade = {CascadeType.ALL})
     private Address address;
 
-    @OneToMany(cascade = {CascadeType.ALL}, fetch = FetchType.LAZY, orphanRemoval = true, mappedBy = "client")
+//    EAGER
+    @OneToMany(cascade = {CascadeType.ALL}, fetch = FetchType.EAGER, orphanRemoval = true, mappedBy = "client")
     private List<Phone> phones;
 
     public Client(String name) {
