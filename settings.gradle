@@ -18,3 +18,4 @@ include 'hw13-di:homework'
 include 'hw14-spring-jdbc'
 
 include 'hw16-queues'
+include 'hw17-grpc'
