@@ -20,3 +20,6 @@ include 'hw14-spring-jdbc'
 include 'hw15-number-sequence'
 include 'hw16-queues'
 include 'hw17-grpc'
+
+include 'hw18-webflux:client-service'
+include 'hw18-webflux:datastore-service'
