@@ -15,7 +15,8 @@ include 'hw11-cache:homework'
 include 'hw12-webserver'
 include 'hw13-di:homework'
 
-include 'hw14-spring-jdbc'
 
+include 'hw14-spring-jdbc'
+include 'hw15-number-sequence'
 include 'hw16-queues'
 include 'hw17-grpc'
