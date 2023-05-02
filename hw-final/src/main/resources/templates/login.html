@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Интернет-магазин Логин</title>
+        <link rel="stylesheet" href="/main.css" th:href="@{/main.css}"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+              integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body class="centered">
+        <h2>Добро пожаловать в интернет-магазин</h2>
+        <form action="/login" method="post">
+            <table>
+                <tr>
+                    <td>Логин</td>
+                    <td><input type="text" name="login" required placeholder="Введите ваше имя" value=""/></td>
+                </tr>
+                <tr>
+                    <td>Пароль</td>
+                    <td><input type="password" name="password" required placeholder="Введите ваш пароль" value=""/></td>
+                </tr>
+            </table><br/>
+            <p><input name="submit" type="submit" value="Войти"></p>
+            <h3><a href="register">Регистрация</a></h3>
+        </form>
+    </body>
+</html>
+
+
+
+
+
