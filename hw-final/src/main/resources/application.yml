@@ -1,0 +1,18 @@
+
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5430/demoDB
+    username: usr
+    password: pwd
+    driverClassName: org.postgresql.Driver
+    initialization-mode: always
+    schema: classpath:data.sql
+  jpa:
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create-drop
