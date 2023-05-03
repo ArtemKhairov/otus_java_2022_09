@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин Регистрация</title>
+    <link rel="stylesheet" href="/main.css" th:href="@{/main.css}"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body class="centered">
+<h2>Страница регистрации</h2>
+<h3><span class="has-error" th:text="${validationErrors}"></span></h3>
+<form action="/register" method="post">
+    <table>
+        <tr>
+            <td>Логин:</td>
+            <td><input type="text" name="login" placeholder="Введите ваше имя"/></td>
+        </tr>
+        <tr>
+            <td>Пароль:</td>
+            <td><input type="password" name="password" placeholder="Введите ваш пароль"/></td>
+        </tr>
+    </table>
+    <br/>
+    <input type="checkbox" name="isUserCheck" class="checkbox" id="checkbox" value="Да">
+    <label for="checkbox">Я согласен с условиями использования</label>
+    <br/><br/>
+    <p><input type="submit" value="Войти"/></p>
+</form>
+</body>
+</html>
