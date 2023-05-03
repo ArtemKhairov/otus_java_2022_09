@@ -19,6 +19,7 @@ public class OrderController {
 
     @GetMapping("/order")
     public String saveOrder(Model model, HttpSession session, Authentication authentication, OrderDto orderDto) {
+//        System.out.println(authentication)
         String login = authentication.getName();
         BigDecimal totalPrice = (BigDecimal) session.getAttribute("totalPrice");
         String orderList = (String) session.getAttribute("order");

@@ -31,6 +31,7 @@ public class GoodController {
 
     @GetMapping("/goods")
     public String getAllGoods(Model model, HttpSession session, Authentication authentication) {
+//        System.out.println(authentication);
         List<GoodDto> goods = goodService.getAll();
 
         String login = authentication.getName();
